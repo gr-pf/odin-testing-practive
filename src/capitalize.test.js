@@ -19,3 +19,9 @@ test("capitalize a sentence", () => {
 test("throw error with number", () => {
   expect(() => capitalize(123)).toThrow(TypeError);
 });
+
+test("throw error with number", () => {
+  expect(() => capitalize(123)).toThrow(
+    "the function 'capitalize' only accept strings.",
+  );
+});
